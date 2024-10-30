@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: #3a3833;
+}
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: coral;
+}
+.star {
+  padding: 10px 0;
+}
+.star i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: black;
+  transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover .navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+  color: coral;
+}
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+  padding: 7 px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border: none;
+  /* color: black; */
+}
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon.active {
+  color: white;
+}
+@media only screen and (max-width: 991px) {
+  body > nav > div > button:hover,
+  body > nav > div > button:focus {
+    background-color: #fb774b;
+  }
+  body > nav > div > button:hover .navbar-toggler-icon,
+  body > nav > div > button:focus .navbar-toggler-icon {
+    background-color: white;
+  }
+  #navbarSupportedContent {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 10px 0;
+  }
+}
+#home {
+  background-image: url("./images/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#home span {
+  color: coral;
+}
+#new .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#new .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+#new .one:hover .details {
+  cursor: pointer;
+  background-color: rgba(245, 178, 178, 0.7);
+}
+#new .one .details button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+#new .one .details button:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+#new .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+#new .one:nth-child(2) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+.product {
+  cursor: pointer;
+  margin: 2rem;
+}
+.product img {
+  transition: 0.3s ease;
+}
+.product:hover img {
+  opacity: 0.7;
+}
+.product .buy-btn {
+  background-color: #fb774b;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Optional: to add space between products */
+  padding: 0 10px; /* Optional: to avoid overflow on the container */
+  flex-wrap: nowrap; /* Ensure the items don’t wrap to the next line */
+}
+
+.product {
+  flex: 1; /* Ensure all products take up equal width */
+  margin: 0 10px; /* Optional: small spacing between each product */
+}
+#banner {
+  background-image: url("./images/banner/2.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#banner h4 {
+  color: #fff;
+}
+#banner h1 {
+  color: #fff;
+}
+#banner button {
+  background-color: #fb774b;
+}
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.product {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.product img {
+  height: 400px; /* Enforce same height for all images */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+  width: 100%; /* Makes the image fill the container's width */
+}
+footer {
+  background-color: #222;
+}
+footer h5 {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+footer li {
+  padding-bottom: 4px;
+}
+footer li a {
+  font-size: 0.8rem;
+  color: #999;
+}
+footer li a:hover {
+  color: coral;
+}
+footer p {
+  color: #999;
+  font-size: 0.8rem;
+}
+footer .copyright a {
+  color: black;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+footer .copyright a:hover {
+  color: #fff;
+  background-color: #fb774b;
+}
+
+#cart-container {
+  overflow-x: auto;
+}
+
+#cart-container table {
+  border-collapse: collapse;
+  width: 80%; /* Change width to 80% for a smaller table */
+  max-width: 800px; /* Add a max width to prevent the table from getting too large */
+  margin: 0 auto; /* Center the table horizontally */
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart-container table thead {
+  font-weight: 700;
+}
+
+#cart-container table thead td {
+  background: coral;
+  color: white;
+  border: none;
+  padding: 6px 0;
+}
+
+#cart-container table td {
+  border: 1px solid whitesmoke;
+  text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+  width: 80px; /* Reduce column width */
+}
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+  width: 150px; /* Reduce column width */
+}
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+  width: 120px;
+}
+
+#cart-container table tbody img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+}
+
+#cart-container table tbody i {
+  color: #8d8c89;
+}
+#cart-bottom .coupon > div,
+#cart-bottom .total > div {
+  border: 1px solid black;
+}
+#cart-bottom .coupon h5,
+#cart-bottom .total h5 {
+  background-color: #fb774b;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  font-weight: 700;
+}
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+  padding: 0 12px;
+}
+#cart-bottom .coupon input {
+  height: 44px;
+}
+#cart-bottom .coupon input {
+  margin: 0 0 20px 12px;
+}
+#cart-bottom .total div > div {
+  padding: 0 12px;
+}
+#cart-bottom .total h6 {
+  color: #2a2a2a;
+}
+.second-hr {
+  background: #b8b7b3;
+  width: 100%;
+  height: 1px;
+}
+#cart-bottom .total div > button {
+  margin: 0 12px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}

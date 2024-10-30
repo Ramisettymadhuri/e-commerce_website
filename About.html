@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - rymo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about-header {
+            background-color: pink;
+            color: black;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .about-header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-right: 20px;
+
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            height: 70%;
+            margin-top: 27%;
+        }
+
+        .about-content {
+            flex: 2;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: lightgreen;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-content .mission {
+            font-size: 20px;
+            margin-top: 40px;
+        }
+
+        .about-values {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .value-box {
+            flex: 1;
+            margin: 10px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .value-box h3 {
+            color: lightskyblue;
+            margin-bottom: 10px;
+        }
+
+        .value-box p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media(max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+            }
+
+            .about-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-header">
+        <h1>About Us</h1>
+        <p>Your Trusted E-commerce Partner</p>
+    </div>
+
+    <div class="container">
+        <div class="about-section">
+            <div class="about-image">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExMWFhUXGBUbFxUXGBgWFxcYGxIYFxgXHRUZHSggGBomGxcaITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQFy0gHx8tLS0rLS0tLy0wLy0tLS0tLSstLS0tLS0rLS0tLS0tLS0tNy0tLS0tLS0rKy0tLS0tLf/AABEIAJ8BPgMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcBAgj/xABHEAACAQIEAgcDCAcGBQUAAAABAgMAEQQSITEFQQYTIlFhcYEykaEUIzNCUnKSsQdiorLB0fA0Q1NjgvEWJFTT4RVzs8LD/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAECAwQFBgf/xAA7EQEAAgEBBQQJAgQEBwAAAAAAAQIRAxIhMUFRBBNhcQUiMoGRobHR8BTBQlJi4SMzktIVNFNygqLC/9oADAMBAAIRAxEAPwDidSqUCgUCgUCgUCgUCgUCg34Zesy9rLMtsj3tntspPJhsG57HlWUxs+Ttpfvcb8XjhPXwnx6T7pZYiWYmMZJhcPERZZPtAKdL98Z9O4RO6N++Ov59V65taZpGzfnXlPXEfWvw6RgOHWT6PsvziJ5/qMd/unXzq21NePDqynSrq/5e638s/tP7Tv8ANpupBIIII3B0I9KvE5csxNZxMYeVKCgUCgyQQO5silj4C9vPuFRNoji009K+pOKRMs/ydE+ke5+xGQx9ZPZX0zHwqm1M+zHxbd1p6f8AmWzPSu/4zwj5z4NiYdkdb81HusK6O3iQdf8AW/oDtVY4+rvnr+fs2vHq/wCL6leVY4z+dZ90S8ltZWlGVBrHAtwWHeeYB5udTy8EdK8eclsYi2rGK/w1jn/aeczvnl4JZSh6yS3W2GSO3ZjH1SV5W+qvqfFEZ3Rw+qL3mk7ep7fKOVY5bvpHvnxjmYkkk3J1JOpJ771s4ZmZnMvKIKBQKBQKDygt3C+ICZSzEZ1B6wG9iDYtIba5GKqzEaxuolGhYCEobi/C3Qu65nQEFi2roW1Ge24NxaQXR7gg3uBIiqIKDZwmBkkuUUlR7Tmyov3pGIVfUiiVk4ZwoR7IZXYA3GH+UNlO2XDyFcqf5r2ZrgKtgzGBU6lDwmgmeBcPjkDFwTuBY2tYA3/3rHVvNeD0+wdl09WJm+/84tfA4BXTOWYWL5gANlhaTQ33OW3rU3vMTjH5nDPQ7LTU09uZndM591Zt+zek6PqN3Y9oDRRsZBGOe9zes415nl+cXXb0XWvG08enLOz8eaIx0HVyMl75Ta9rXNtSPC+3hat6W2q5eX2jS7rUmnT8+HTwYKsxKBQKBQKBQeUG6uJVwFlvposg1YDkGH11+I5d1Z7Mxvr8HVGrXUjZ1fdbnHn1j5x8mbEbAzDOp0WePU7bEnR/JrN41Ef07vBrqcM60bUTwvH5v8pxPiyAOw+riUHn1qj4OPitV3R/T9Ps0xe0ctWI/wBUf/X1hqGOFtnaM9zjML/fQX/Zq+bRyy5ppoW4Wms9JjPzj7PuHCMpuphk8C62/CzK16ibRMc4XpoWrbMbNvfH0mYln+SP/wBLH+N/+9VdqP5p/Pc17m//AEa/Gf8Ac9yONMmGj8SY2PudmPwpmOsybN43bNK+cxP1mZY55gRaXEM4+xGDl/ayqPMA1aIx7Nceal7xbdqaszHSsbvniPhl9RBgA0aCFf8AFkPaOn1WI/8AjW9ROOEznwj8+q1YtEbWnWKR/Nad/un/AGxl8QAZj1SmRxqZXFlX9bK2g+859AameHrbo6fn7K0xtT3UbVudp4R4793vt8IfLzqhJDdbKTrIblVPeubVm/WPoOdIrNvCOittWunOYnbv/NPCPLPGfGfdHNoMxJJJuTqSdST33rVxzMzOZKIKBQKBQKBQKD6ilZWDKxVgbhlJBB7wRqDRKw8P48hyiQdWVvlZQQgvfMV6uzwE3N8mZDfWM1A3DgIZtVjV7jeIdoDl/Z75fN8MvcddaD4+QmHSPCzS3ubhA5B0+tNggw9KJHxs2dWmCQhb/Sys04B9kAP1kkRvY5o4123GhAaWN48vspGrrck9avYLH6wizEljzeRnY2Gqi4JCAqULP0LmkRMW0SZ3EaWQgsD2yDcAjZSx399QmG7xPh0eHxHVRZgjAAjMTb/npMOSDuCUQa95PpneImYy7OzalqU1NmeX1mIn5SkYuAYPN2OuX56VAuZ7ZojHGxzL7IOdjckG9h4G8xE8XNXUvX2ZmH1LwTCrKsRM4urTEh3II+VSQt2Rdi4GUiwuSDe97VGzHRbvtThtT148+rBJ0YwmTO/WfR7guxv1OHKtlALXBlItsAB3XqzOZmd8tXpRwHB4aNyEkvfKhDXsxlxIUm+mW0Kg+Z9CFJqUFAoFAoFAoFBkgxDITlNr6EaEEdxU6MPOqzWJ4tNPVvp+zPH4T5xwlnEsTaspjb7Ueov35GOnow8qri0cJz5to1NG2+0TWetftP7T7m2HdtpIphyElg3vls3uaq4iOUx5f2dEWvbhet/+7Gf/AGxPwlixOEe39lZT9pOsZbepYfGpraM+0z1dC8x/k4nrGZj92l8lf/Db8J/lV9qOrm7nU4bM/BlTh0x2ik/A1vfao7yvVaOy608KT8JZ4IJIyTnjjPezKzDyChmX0Aqs2rblMt9PT1NLM7Va+cxM/LMw+JZIgSSXmbvYlF/Mu3vWpiLeSt76UTmZm8+O6PvPyYcRjHcZTYKNkUZVHjlG58Tc1aKRG9jqa97xid0dI3R+fNgqzEoFAoFBlSEk66VCcM64MA2Y2tyOnx76GHs+HjBsGv8A6gdfdROGCXDEC4Nx4b+6pRhhogoFB5agWokoh7QKDb4fxOaHN1TlMws1gDca6ajTc0S3Bx12fPIS7ciwU2+dMt9APrknW+5rO1Zl06OtSmcxnPv+z6w3SSaOXOpJXO0hRzcM7e0TYDQmxyjS6juq0RON7HUtWbZrGIa547ic4k65s6hgG0uAzlyNvtkt4HUVZR7/AMQYq1uua2UrpYaFVU7DuRRffSgx4/jM8y5ZZC4uDqF3GYg3Avu7n/UaDRogoFAoFAoFAoFAoPKD1GI1Bse8aVC0WmJzEs3yyX/Ef8TfzqNivRp+o1f55+MsUjltyT5m/wCdTERDO1rW4zl81Kr2gUCgUCgKL0S3IYba21tfvtULYwxZWJ035UEthOGTShQgB7ye/wASara8QtWkzwfHEODyobuuU+Wh91IvEk0mHwoKroVDEbjXS2vrVlGvJh1PauNteVzfkP62oYaUsZXfSpQ+aIKBQKBQKBQKBQKBQKBQKBQKBQKBQKBQKBQKBQKBQKBQKBQAKJSWEwotcjUC9VleIY8RiGzXGnIDvA09Rv61MImXxgYc1jroeWnPvqJ3ERl1/oTw4lVY6DUW0sfSuC9s2w9GlcQu8vR6GVbMg23FWisomzlP6SeiBwmWSMXiJGYb6nnrtW+lec7MsNakTG1CkwYjMGa1yLctrd/hW7mHdSL28O/T+FBGTe0fOpVfNEFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFBmwgGYXv6VErV4t/FS27PI2ueflaqwvZqRi9mGtrWB5irKNzhagyjMcovrbz2rPUndua6Ub97tfRjGYdVVBKoPIE2Px3rj2Jzl2zeJ3Qu+HdbaEVpCkxKK6Y8MXEYaSLMLlTbUXBtpUTmJzBXGJiX5rwiMkjrbVcw120NmHuv7q7InMZcVoxOGaGVbsCLHTxI/8VKGODgk8mqRkqdmNlB8dTqPKqW1aV3TLp0uwdo1YzSm74fVvR9EcQdzGPUn8hWU9po7K+hdeeMxH55NgdDH/AMVfwn+dV/VR0ax6DvzvHwD0Nk5Sr+Eip/VR0J9B35Xj4MD9EMQNmjP+ph+a1P6mjKfQuvHCYn4/ZX66XjlAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFBsYBAXF6ieC1eLLjTc3Hdb41ELWZLABbAi4ufH+h+VShJ4Xgk7os0KFvtW7RGu9qxm0ZxLorScZha+D4OaTDP15zOjgpe3sW1NxbKQfO/6u9ROxjctXvInetHQ3EzPw6Y3JkU2F77bA6a1zzG90Z4IPh2JxqiZisbkZSgKB+s1W65r3QgZu0fDSt8V2eLnnb2uDnWJ7Mr5wQSzE3797fi0ras5hz3jEvQnOw1tfTvNwP67qlVcuBoRCt99dO7WvP1p9d9f6NrMdnjLfrJ3FAoFByevXfn5QKBQKBQKBQS3DOEiZFKk5utVHGlgjC+Yab7+6sNTVmk4no9TsnYa9o04tEznbiJ8p5suH4PG8M8gZuwZOr27SoAbnTx5VWda0WrWY44y10/R+lqaOrq1tPqzbZ8YjG/h4s0fR9D8mOZrTAl9uz83n008971We0T627g1r6K057iczjUjfw3bs7t3m+4+j0RdVLvYyyoTddkQkHbfSk9otiZxyj5rV9E6M3is2nE2tHLhWJnox/8PoNGZr5cSeX90wC8tiDc1Pfzy8Pmp/wrTjdaZzjUn/TMY5c2vwjhsUkeeRnBMqxjJl3YCxNx31bV1LVtivTLDsXY9HV0tvUmd9orGMc/Nmj4EmaJSzduWWNiLDRCQCNOdvGqzrziZxwiJ+LWvozT2tOs2n1rWrP/AI9GOLgqmCWTM2ZDJlGliqFbk6X51M607cV64+alPR1J7PqamZzWZx4xXGfq+MXgsOsCyqZruWCg5LXU63ty8qmt9SbzWcbldfs3Za9mjVrNs2zEZxxjqiK6HklAoFAoFAoFAoMuEazCongtXiz4pSWv6/xP8fdUQtPF4snLb86lDov6LMcI5WRm8q5NaN7u0ZzVfumfHIcPGgIF5WCg8lvuT5Cs8Z4NY3cWPoAFAxCh0YaEFT2Tpp5bn3UxyktPDCxYKWFpGVlCyL5ajkwPMGkTHNFotHBw/wDSng1XiEgXYqhI/WINz7rV06PsuTX9pWY73KsSR2b2G4W+/oRrWrFaejmKLB0t2UtY3J3vpc+Xxri7RWImJ6vpvROta9bVxurjCZrnesUCgUHJ69d+flAoFAoFAoFBMdHMUUGIsQPmXIv9pfZt46mufXrnZ83rei9edPvYicepM++OH1SnBZIljgjZrM6z6aZbN9o30NlFvOsdWLTa0xHDD0ew30q6Wlp2tvtF+mN/Xpw3NrB4tBEgLC6RQW1G7ho2HoKpas7U+Mz93To69I0qxMx6taY85zWXvXLnXtL9NieY2MT2piccOUfVHeU249aPb1Of9MsfyxXSJ8wucPiM2o9rLGD7yDU7ExMx4x+6v6impp0vmMzp3z54rH7NPoxKwgOR1U9cpbMVHYyjNvWnaIib745fNy+ib2r2f1LRE7cZzMezjfxb2FxyqYRGy5Gnnv7J7OYkanYeNZWpMxMzG/EOvS7TWltOunaNmb36cMzjyfGHeKyRM/adMR3ZbSOTq19DZRUzFt9ojdEx8ldO2j6ula2+1b9MetMzvnlwQWKcfI4BcXzy3HMa91dNY/xbe54+vaP0OlGedkVW7yygUCgUCgUCgUGxhANe/wBKiVqtmZWIJB9oWNvDlaqrywpGM4vmt3GwNwNRVlU50ehMkgKyZHJNu69jYeVxaubVdeitPH8XK7rh5YDIoAyvcAG6950B86zrXdmJbzO/fC49C+iwwyM4wzXfm0q5bA2tlvbvqZrMxvNukTiJSDPJLK5aNososGzKwaxtdCOW4sbbCsbRhpwcW6ZYvNjJWzFwCFJ77DX4kiuzRjFIcGvObtCD2rAmxI2vruNhrrrWs8GdIzaIXDgsKrHYC3ffc+NefrTM2fWej9KunpYrGG/WTuKBQKDk9eu/PygUCgUCgUHlAoFAoFAoF6JKIKBeiSiHtAoFAoFAoFAoPVa1Et6Gfc2uSLA9x5+tUmGkS+1jJIzezf12376kewSGNrqdjofiDWd4y1pOHROFMcdGpR8sq7jbzHlesJjDqpfmvnA8FisoVzHYCxIUByOfaqMzMNJ1K5zhEfpJ6RjCxiCLWZhZQPqg6Zj3c/O1KU2538GOpq7MZ5y4il7m5sCdb6knmffXY4ZSWCzB1ZBpfa/LcDXzqt8Y3t+z7UakTWM71zwrgrcf+Qe6vOtGJfY6NotXMMtVaFAoFByevXfn5QKBQKBQKCW6N4mNHkLsqMYyIpXj61I5OsRszJlY6orqCFYguDbS4JT+G4phgFzzYdlvIcUgwxzYrmpibqh1Yy2UXMeVlL6lqhLSwnGcLFg5I40kMjvzMWbL1OUkuYWBTNsoKt40Qk5eMYIu2d4XjaRxAEw5RsLE8E6Wk+aGbKZIjZS5vGzA39olgwvEeHpEsEmST+yq0yRNcWbFyPKmZVY5TJArKwBcBgBswIfXFOLYRkbLJCYsmLAgEB60yvicQYJBIYgECq8LXDg5UK25US3sd0hwQxE8glBjZHEXVRK7JfFxNYJLho0X5oNoS2gIza6hH8Ex3D+sxwlaONJpHWMiJ3EcTdbrEBHe+q2VglrK2pXLRCLweNjGDMaSRRSXn60SQmRp1KL1QR+qbJazCxKWJDX+yE9xbjWFaZ2imhF1kEDtEXSAmaJtY/kilSY1ZQR1uU8x7VEqx0kaJ3EsTRkMFVggyXkSGLrJRFlXJG7s2XQXysbLtRCIqUFAoFAoFAoFAoNjB3vYbVErVWCDAyAi6ML3B0vv4Dnsdax7yOrvr2TVzGaT8GtxXCdW4XwBt+QqIttRlXW0u6vss/CXkRg8ZKt3j+XOqWlNYde6K4jFyLnkYIoGtgbt466D41jnlDWY6tvjPRoNDK7Lmkltc7soHsgeW/mTXVp1xDj1LRaXEcZw9kYgg3v2tzYk7Wt/RrRTDPw+Ill1IudR5A2tz5/GqXmMOrstZm8Viea2wx5RavPtOX1unTZjD7qFygUCg5PXrvz8oFAoFAoFAoFAoFBZ4OE4RYI8VK0nUyCOPKrL1izhiJ28VVFEgW39/EL71CW5P0UwwjlXr8ksEwikkY3ifIhbEFFIDXXXKN3ER5sBQbM/RHDiR0VJ2jz4lWxOdcmEEcjqglGWxORVdrlcwkAXXcKEKlD2gUCgUCgUCgUCgUCgUFj6HcMzuZmHZQ9nxfv9B8SO6ubtOpiNmOb2vQ/ZNu/e2jdXh5/2XOdssbyW0jW5/ID1On+1cunpzefB7fa+107PWZmfW5R+clDafrQjH2tcx7yXLe7Wuyd3B8rmbTtWnMyvXR7CxhUNheuS0y6qw6BwOcSyrEuqpZpDy/UT1IufujvrTQpmcste+IxC2YllIOY2A1PkK7HGrkHRzC4nETtJCrEZFza3B6sMdQdCMwF6hO1Mb0ZxXoBGGL4U9rUZXN723Cty9aw1dKbRul6nYO36elae8rvn+KPt9lUxeEkibLIjI3cRb3HmPEVxzWY3S+k09WmpXapOYYKhcoFAoOT1678/KBQKBQKBQKBQKBQeUC1AtRL2iCgUCgUCgUCgUCgUCgz4LByTOEiRnY/VUX9T3DxOlQmIdJGDGEgVNCwFhbYsdyTz1N7CuSNKbW2rvct6Rro6UaPZ+X8X1xH3SvGOGdVwqQk3NgzN9uZ7BfRQwA8q6N0Q8jNr2zM5mVB4dwWRgthpsTyBtesbXdFaSnOHTmJHc37AsB+sf6+NYzGZbZxDqPQTBfJ8Mpf6WQlpCd8x5eQFh6V2Vrsw4b22pymuKTaxRA/SSLe32V7bflb1qypwPEZMMZTq8zu4HMl3OQei5R6UGzh9CBfXu9dT7z+VEJGfBRyLlkQODyYX/wBqiYid0r6epfTnapOJ8FE6Y9EUhjM8FwqkZ0JvYE2zAnXfcVya2jFY2qvf9Hekrat+61eM8J/aVKrme2UCg5PXrvz8oFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFBt8IwXXTJHfKGPab7KgFmPnlB9bVEph1WHhwHU4XDjq1dc723K/ac7tvYX3y+NVXhi6QSCXELEgJysFHibdo/Ej31EylI/pE4ikCQYPTbrZL95JCj35j7qpqZncvp22Z3qvD0gjSEoN82bl3Vj3c5b9/VJdAcIcVMZCPmYmvr9aUjT8IsfO1bU08b2N9WZjEOncUwKiEGzEjRVDMoJJsLhSL+taskI+Ky4oAADqYZDpoM2QkmwqDksOcJErnRVCqgPIAAFqkbHBB1jma2+i/d8u/n60Qm82tu7eg1+MQ9ZBKn2kYe9SKraM1mGmhfu9Wtukw4kK8x90UQUHJ69d+flAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoFAoJ7otALTSE2OTIg72Yi58AFB/EKraVquqYDGRpDLiTu9kTv6tOwoA8WufWoWZug3Cc8xncezcj1N2b+XhUQlQ+kWP+U4yee/ZZrL9xRlX4C/qaztJCJELSSLFGLu5CqPPn5Aa+lTG8l3Xo5wRMJh0iUXyjXvYnVm8ySTWkKpjHSgDXccu7T86kUnDRF8W/wCvHIo8zGR/GoSnelcl4oYl+sq+6w/OhCf4WCqhByAufGpQk4VoPZaDh+JSzsO5mHuYivKni+7pOaxPWIYqLFByevXfn5QKBQKBQZ8FgZZiVijeQgXIRSxA7zYaDxNEtxuClfpZ8PHysZRKb/dgDsPUCoMPP/TIv+sw/wCHFf8AYoPocDdrdVLBLfYJKqsT3CKXI5PgFNDDQxWFkjbJIjI32XUq3uIvUjFRBQKBQKBQKBQKBQKBQKBQWjh0QTDRb5nZm8LFso+C39apbi0rwW2FjK0cCDsoAW1sBbQX8tT6VAunFcSMLw12XR5BlXkbuLX9FufSomcQOPyvlFZrLz+iXgdycZIN7rEP1b9p/U6eQ8a2rGFHS4cTmYhdbXBbl5Dx8f6EjDxFrACg0uG4TLIjkahv5UGh0omKYqBBb2Dlvyyvlv6Ag+tRPFbksvC5tAoJt4fEk99Sqm4TQfUh0oOK8VW08w/zJP3zXmX9qX3HZ5zo0nwj6NSqtSg5ORXrvgJjBRBQKD2NCxAAJJIAAFySdAABuaCWbDQ4f6cdbMLgwBiI49P72RdWb/LQi3NgQVqEpLDyzMoOJESQtlMUUheKLU3DphMPZ5b30e1jY3Y0SkmMsYteaK5J0fCcJ8L5NXlHifCgi+O4yE5BLnn9qxGNMrJtfVosovpsNctEIoLg30vPCf1smIU+JKiMqPINQbifKYojlaPE4ZdWX6WJLki5jYCTDkkkZrITrY0GuMBHiNcMCsmpOGY5if8A2X/vPuHtjS2fUiREUQ9oFAoFAoFAoFAoFAoPKJXoYcfKIYhqI8g1/wAtLn4qffWbTkt/RHhtwXO8jkL90dm/71IhD4/ShxMGSPDqdIxdvvMP4Lb8VUtO9MKJw7ANi8QmHXYm7kckHtHz5DxIqawS7XLB1MKxR9nQKAOS2tYelaKpbhmGyRjlpQYOIxElaCQwcV1B/rlQUvprGzY+MD6sV792Z1H/AOZPuqsrRwWngq2Uag+W1WVWGE0H1IdKDjfSFbYqcf5j/E3rzdT25fadinPZ6eUI+qOkoOWYwfOP95v3jXq14Q+E1oxqW85YqsyKDygsceGkw0RMaMcQSiu43g6wHJCg3M7AHNbVR2dDmtCWfB8MTDqXZl6yM2klZRIkL2+hijvbEYnvv2E7/rgI/FdIHzMYM0Wb2pSxfEybXL4g9oXtsmUd4O9DKGqQogoMuFxLxuHjYo42ZTYjSx17raW8aJSixriReJRHiRr1aDKk9tbxqPo5eeQaN9WxsrQM2NwjTxCZgBOUMhIIIxMa3zyabTpYlxuw7ZFwxcK/Uoe0CgUCgUCgUCgUCg3+AwZ8TEp2zgt91e23wU1EphdeARCXFMzbBXY+pAt63NUhpLoHAUVGkmZuxGpt3Kqi5t7qlDk3HOJNJJJM3tOxbyBNwPQflWXFLqn6NuiXyOD5ROPn5QDlP92n1V+9zPnatYQnH7cgJqUJldh5UGOVb/Cg2sGLJ5k/nRKgcYxvWY+YnZCsQ8lXOT73+FVnitEblz4QNARVlU3ERRBIaDkHSM/81N99q83V9uX2fYf+Wp5Qjao6ig5XiWu7HvZv3jXrV4Q+D1Zze0+MsdSzKCY6NYYlzKFztG0axIbdvESMRAuvIFWfXQ9VY+1UJhJ8SxohQMj5m+cXDyX7RJOXE4031LSOCiNuFQ7MimgrmKxryKisRljXKigWUDmbD6zHUncn0tI16IKBQKBQeqxBBBII1BGhB5EGguHDsW04V1bLI8qgsNBFjLEwzAbBZwpRxtmUsdAoqFkBx7DKrrIi5Y5lzquvzbZiskWv2HDAc8uQ86lCNogoFAoFAoFAoFAoJ3oxHZZpct7BUVjcKpe5O2pOVbeTGq2XrCz9CAeukJI1CLbu1J/JPhUQmVq6U40YfAPyMzBB5HtN+ypHrUSKN0FwYxXEYEYXRWMjDvCC4/by+81EQZdy43iDcKKuNXDd/OiEnFJtQRHSXijQ9WAr5XcBpFBIjFr3NtgTYX5XvUSlJcLnbISxutwV/ib9x0pA5tFKzY3EsoEhedsikgABVClj36g6eFRPFaODpnCodAX300B0B/KpVTUd+6wqUPmU0Jcb4pJmmlbvkc/tmvMvObS+37PXZ0aR0iPo1aq2KDk9eu/PygUFu4bC6QRhAc/VO69q3z2KmGFj8rQqXB5MTqKhZBdIZg07qn0cdoo/uRjIDbkWsWPi5qUI6iCgUCgUCgUEp0d7UpgPs4hTFz9skNCdNrSql/C/fRKU4yRNA8gtc9ViRuNZT8nxXvxEaEDu2qEqvUqlAoFAoFAoFAoFBZsCCmEjHJzI9v8AVkH7lUni0rwTfQNr4jL9ph8IpaJls/phxJHyaIbfOMfMBQPzNSh8foQUHGyMfqwke+RD/wDWiHUy+ZyxvvRLOhAohmRtqJbQb+vSgj+MYwJEx12P5UHP+gyEgNl3LEtpexcm3re9VjitLq3DQLAg6VKqRB0qRp8TxOSN2+yrH3KT/CotOImV9Km3etOsxDjd68t9yUCg/9k="
+                    alt="About Us">
+            </div>
+            <div class="about-content">
+                <h2>Who We Are</h2>
+                <p>
+                    Welcome to [rymo fashions], your number one source for all things [Product Niche].
+                    We're dedicated to providing you the very best of [product/service], with a focus on quality,
+                    customer service, and uniqueness.
+                </p>
+                <p>
+                    Founded in [2024] by [Madhuri], [rymo] has come a long way from its
+                    beginnings
+                    in [Madanapalle]. When [Kavya] first started out, their passion for
+                    "eco-friendly products" drove them to start their own business.
+                </p>
+                <p class="mission">
+                    Our mission is to deliver high-quality products that bring joy and value to our customers' lives
+                    while
+                    fostering a sustainable future.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-values">
+            <div class="value-box">
+                <h3>Quality Products</h3>
+                <p>We provide the highest quality products sourced from trusted suppliers to ensure you receive the
+                    best.</p>
+            </div>
+            <div class="value-box">
+                <h3>Customer Satisfaction</h3>
+                <p>Our customers are at the heart of everything we do. We prioritize their satisfaction and feedback.
+                </p>
+            </div>
+            <div class="value-box">
+                <h3>Sustainability</h3>
+                <p>We believe in sustainability and are committed to reducing our environmental footprint.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
